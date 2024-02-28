@@ -31,9 +31,6 @@ class joinController extends Controller
             'EmPhoneNumber' => 'required',
         ]
     );
-        echo "<pre>";
-        print_r($request->all());
-        die;
         $pkSubscriber = new PkSubscriber;
         $pkSubscriber->F_name = $request['Fname'];
         $pkSubscriber->L_name = $request['Lname'];
